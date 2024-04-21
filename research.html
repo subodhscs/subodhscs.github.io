@@ -11,9 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="is-preload">
-
-		<!-- Nav -->
+	<body class="is-preload", oncontextmenu="return false"></body>
+			<!-- Nav -->
 			<nav id="nav">
 				<ul class="container">
 					<li><a href="index.html">About Me</a></li>
@@ -27,7 +26,7 @@
 			</nav>
 
 		<!-- Home -->
-			<article id="top" class="wrapper style1">
+			<!-- <article id="top" class="wrapper style1">
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
@@ -54,40 +53,51 @@
 						</div>
 					</div>
 				</div>
-			</article>
-
-		<!-- Work -->
-		<article id="work" class="wrapper style2">
+					<!-- Work -->
+		<article id="work" class="wrapper style3">
 			<div class="container">
 				<header>
-					<h2>Here's all the stuff I do.</h2>
-					<p>"Complete Mechanical Design Cycle: Modeling, Analysis, Optimization And Manufacturing"</p>
+					<h2> Here's all the stuff I do.</h2>
+					<p>Design Optimization for Advanced Manufacturing</p>
+					<h7><a href="#researchWork" class="button small scrolly">Research</a></h7>
+					<h7><a href="#projects" class="button small scrolly">Projects</a></h7>
+					<hr style = "margin-top: 0.5em;margin-bottom:0.75em; border-style: dotted;">
 				</header>
 				<div class="row aln-center">
 					<div class="col-4 col-6-medium col-12-small">
-						<section class="box style1">
-							<span class="image scale-down"><img src="images/3dModeling.png" alt="" /></span>
-							<h3> <a href = "research.html">Solid Modeling</a> </h3>
-							<p>Parametric, Algebraic and Implicit Modeling, Surface Modeling.
-								<hr>
-								Tools Used: MATLAB, C++, Rhino, SolidWorks, Ansys, nTopology, Creo
-							</p>
+						<section class="box style4">
+							<span class="image scale-down"><img src="images/metalAM.jpg" /></span>
+							<h7><a href="#additiveManufacturing" class="button medium scrolly">Metal AM</a></h7>
+							<p>Design optimization for metal additive manufacturing (AM) using novel truss-type supports.</p>
 						</section>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
-						<section class="box style1">
-							<span class="image scale-down"><img src="images/designOptimization.png" alt="" /></span>
-							<h3> <a href = "research.html">Design Optimization</a></h3>
-							<p> Thermal and Structural FEA <br>
-								Multi-physics FEA <br>
-								Shape, Size and Topology Optimization .</p>
+						<section class="box style4">
+							<span class="image scale-down"><img src="images/cadReconstruction.jpg" /></span>
+							<h7><a href="#cadReconstruction" class="button small scrolly">CAD Reconstruction</a></h7>
+							<p> Geometric Post-processing of Topology Optimized Design based on End User Applications.</p>
+						</section>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<section class="box style4">
+							<span class="image scale-down"><img src="images/topologyOptimizationRoundtable.jpg" /></span>
+							<h7><a href="#geometricModeling" class="button small scrolly">Geometric Modeling</a></h7>
+							<p>Topology Optimization Roundtable Challenge 2019: FSAE Car Upright subjected to multi-loads.</p>
+						</section>
+					</div>
+					
+					<div class="col-4 col-6-medium col-12-small">
+						<section class="box style4">
+							<span class="image scale-down"><img src="images/3Dprinting.png" alt="" /></span>
+							<h3> <a href = "research.html"> Additive Manufacturing</a></h3>
+							<p>Metal AM, Fused Deposition Modeling (FDM), Ceramic 3D Printing.</p>
 							<hr>
-							Tools Used: MATLAB, SolidWorks, Pareto, ANSYS, nTopology, Fusion360,OptiStruct, Autodesk Inventor, SolidThinking
+							Tools Used: MATLAB, EOS M290, Ultimaker, Materialize Magics, Cura
 							<p>
 						</section>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
-						<section class="box style1">
+						<section class="box style4">
 							<span class="image scale-down"><img src="images/3Dprinting.png" alt="" /></span>
 							<h3> <a href = "research.html"> Additive Manufacturing</a></h3>
 							<p>Metal AM, Fused Deposition Modeling (FDM), Ceramic 3D Printing.</p>
@@ -99,132 +109,131 @@
 				</div>
 				<footer>
 					<p>"Science can amuse and fascinate us all, but it is engineering that changes the world" - Issac Asimov</p>
-					<a href="#research" class="button medium scrolly">See some of my recent works</a>
+					
 				</footer>
 			</div>
 		</article>
 
 		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
+		<!-- Portfolio -->
+		<article id="additiveManufacturing" class="wrapper style6">
+			<div class="container">
+				<header>
+					<h1><strong>Metal Additive Manufacturing</strong></h1>
+					<span class="image scale-down"><img src="images/blockSupportChallenges.jpg"  /></span>
+					<p>Support structures are necessary evils in metal additive manufacturing. 
+						Unlike polymer based printing, where supports are purely structural components, in metal additive manufacturing, 
+						these supports act primarily as paths for heat transfer from melt pool to the build plate. 
+						They also hold part in place against the recoil pressure during laser melting. However, the commonly used supports are non-optimal, 
+						difficult to remove and contribute to significant amount of material wastage due to powder entrapment.</p>
+						<hr style = "margin-top: 0.5em;margin-bottom:0.75em; border-style: dotted;">
+						<h1><strong>Truss-type Supports for LPBF Metal AM</strong></h1>
+						<span class="image scale-down"><img src="images/Graphical Abstract.png"  /></span>
+						<p>We came up with the idea of using thin truss-type supports were designed, analyzed and optimized to account for time-dependent thermal loads. 
+							These supports were optimized for better thermal behavoir during each layer-wise metal deposition. 
+							Manufacturing validations were carried out for parts with different complexities to demonstrate the advantages of these optimized 
+							 in comparison to the commonly used block type designs. These supports did not entrap any powders, saving over <strong>80%</strong> of metal powder.
+							 These supports were then used for structural deformation minimization of parts being printed.
+							 Multi-load structural optimization was carried out for the coupled system where, part and supports were analyzed in tandem. 
+							 Recoater collision and part deformation were minimized to allowable limits using the optimized supports. 
+							 These were funded by US NAVY and US ARMY Grants. 
+							 Check <a href="/index.html#contact">Contact</a>
+						</p>
+					<span class="image scale-down"><img src="images/supportOptimizationContributions.jpg"  /></span>
+				</header>
+			</div>
+		</article>
+			<article id="cadReconstruction" class="wrapper style6">
 				<div class="container">
 					<header>
-						<h2>Here’s some stuff I made recently.</h2>
-						<p>Advanced Modeling, Analysis, Optimization and Manufacturing.</p>
+						<h1><strong>CAD Reconstruction</strong></h1>
+						<span class="image scale-down"><img src="images/topologyOptEndUserRequirements.jpg"  /></span>
+							<p>Topology optimized models need further post-processing to actually realize end user's intent. 
+							Rough surfaces, non-parametric model, large file size,.. etc are some of the challenges with the TO designs. 
+							We reviewed all the existing approaches to addressing these issues, categorized them based on their underlying 
+							representations and also proposed applicable solution for small subset of problems. For 2D and 2.5D problems,
+							boolen of initial geometry with negative components can be used to create parametric geometry.The research was funded through NSF grant.
+							Check <a href="/listOfPublications.html#journalPublications">Publications for more details. </a></p>
+						<span class="image scale-down"><img src="images/cadRecoveryThroughBoolean.jpg"  /></span>
 					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#research" class="image featured"><img src="images/HemisphereWithTrussTypeSupport.jpg" alt="" /></a>
-								<h3><a href="#">Hemisphere on LPBF AM</a></h3>
-								<p>Hemisphere printed on AESL-optimized truss-type supports.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/ceramic3DPrintedModel.jpg" alt="" /></a>
-								<h3><a href="#">Clay 3D printed Cylinder</a></h3>
-								<p>Layerwise Printed Hollow Cylinder with internal infills .</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/sunBurstChairs.jpg" alt="" /></a>
-								<h3><a href="#">Sun Burst Chairs</a></h3>
-								<p>UW-Madison inspired Polymer 3D printed Sunburst Chairs.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="#">Tempus dolore</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-								<h3><a href="#">Feugiat aliquam</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-								<h3><a href="#">Sed amet ornare</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
+					
 				</div>
 			</article>
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
+			<article id="topologyOptimization" class="wrapper style6">
+				<div class="container">
 					<header>
-						<h2>Have me make stuff for you.</h2>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
+						<h1>Topology Optimization of FSAE Car Upright</h1>
+						<span class="image scale-down"><img src="images/topologyOptEndUserRequirements.jpg"  /></span>
+							<p>Topology optimized models need further post-processing to actually realize end user's intent. 
+							Rough surfaces, non-parametric model, large file size,.. etc are some of the challenges with the TO designs. 
+							We reviewed all the existing approaches to addressing these issues, categorized them based on their underlying 
+							representations and also proposed applicable solution for small subset of problems. For 2D and 2.5D problems,
+							boolen of initial geometry with negative components can be used to create parametric geometry.</p>
+						<span class="image scale-down"><img src="images/cadRecoveryThroughBoolean.jpg"  /></span>
 					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
+					
+				</div>
+			</article>
+
+			<article id="projects" class="wrapper style6">
+				<div class="container">
+					<header>
+						<h1><strong>Projects</strong></h1>
+						<div class="row aln-center">
+							<div class="col-4 col-6-medium col-12-small">
+								<section class="box style4">
+									<span class="image scale-down"><img src="images/3dprintedTactileMap.jpg" /></span>
+									<h7><a href="#polymerManufacturing" class="button medium scrolly">3D Printed Tactile Maps</a></h7>
+									<p>3D printed Tactile maps with braille for blind and visually impaired individuals. Simplified 3D CAD models are created using 2D maps.
+										These models are then printed using FDM printers with utmost resolution conforming to guidelines by ADA. Multiple iterative designs 
+										were considered based on feedback from McBurney Disability Resource Center (UW-Madison), Wisconsin Council for the Blind and Visually Impaired,
+										and individuals with visual impairments. The maps are currently being tested at the College of Engineering, UW-Madison with further extension to larger campus. </p>
+								</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section class="box style4">
+									<span class="image scale-down"><img src="images/ceramic3DPrinting.jpg" /></span>
+									<h7><a href="#ceramic3DPrinting" class="button small scrolly">Ceramic 3D Printing Simulations</a></h7>
+									<p> Predicting in-process ceramic 3D printing failure investigation through simualtions. 
+										Ceramic 3D printing is a unique process considering the feedstock material and material deposition process. Soft clay is pushed 
+										through extruder over the g-code defined paths. As soon as the material extrudes out, it begins passive cooling in the ambient temperature. 
+										A physics-based clay printing simulator was designed to simulate the passive drying process of
+										ceramic 3D printed parts. Computational model incorporated moisture diffusion phenomenon during for part printing process in conjunction with
+										the G-code, that dictates the path of material extrusion.</p>
+								</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section class="box style4">
+									<span class="image scale-down"><img src="images/topologyOptimizationRoundtable.jpg" /></span>
+									<h7><a href="#geometricModeling" class="button small scrolly">FSAE Upright Topology Optimization</a></h7>
+									<p>Topology Optimization Roundtable Challenge 2019: FSAE Car Upright subjected to multi-loads.</p>
+								</section>
+							</div>
+							
+							<div class="col-4 col-6-medium col-12-small">
+								<section class="box style4">
+									<span class="image scale-down"><img src="images/3Dprinting.png" alt="" /></span>
+									<h3> <a href = "research.html"> Additive Manufacturing</a></h3>
+									<p>Metal AM, Fused Deposition Modeling (FDM), Ceramic 3D Printing.</p>
+									<hr>
+									Tools Used: MATLAB, EOS M290, Ultimaker, Materialize Magics, Cura
+									<p>
+								</section>
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+								<section class="box style4">
+									<span class="image scale-down"><img src="images/3Dprinting.png" alt="" /></span>
+									<h3> <a href = "research.html"> Additive Manufacturing</a></h3>
+									<p>Metal AM, Fused Deposition Modeling (FDM), Ceramic 3D Printing.</p>
+									<hr>
+									Tools Used: MATLAB, EOS M290, Ultimaker, Materialize Magics, Cura
+									<p>
+								</section>
+							</div>
 						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+					</header>
+					
 				</div>
 			</article>
 
