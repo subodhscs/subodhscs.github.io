@@ -1762,12 +1762,12 @@ input, select, textarea {
 
 input[type="mybutton"],
 .mybutton {
-	background-color: #d6c6f3;
+	background-color: hsl(0, 0%, 100%);
 	border: none;
-	color: rgb(3, 0, 0);
+	color: rgb(0, 0, 0);
 	padding: 1px;
 	text-align: center;
-	text-decoration-color: black;
+	text-decoration-color: rgb(0, 0, 0);
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
@@ -1783,13 +1783,13 @@ input[type="mybutton"],
 
 	input[type="mybutton"]:hover,
 	.button:hover {
-		background-color: #070707;
+		background-color: #000000;
 		color: #fff !important;
 	}
 
 	input[type="mybutton"]:active,
 	.mybutton:active {
-		background-color: #00070a;
+		background-color: #ffffff;
 		top: 0.5px;
 	}
 
@@ -1807,7 +1807,7 @@ input[type="mybutton"],
 
 		input[type="mybutton"].alt:hover,
 		.mybutton.alt:hover {
-			background-color: #000000;
+			background-color: #ffffff;
 			color: #fff !important;
 		}
 
@@ -2445,7 +2445,7 @@ input[type="mybutton"],
 		.mybutton {
 			background-color: #050700;
 			border: none;
-			color: rgb(255, 255, 255);
+			color: rgb(81, 252, 2);
 			padding: 20px;
 			text-align: center;
 			text-decoration: none;
