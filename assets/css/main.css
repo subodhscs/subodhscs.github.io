@@ -2443,9 +2443,9 @@ input[type="mybutton"],
 				letter-spacing: 0;
 			}
 		.mybutton {
-			background-color: #04AA6D;
+			background-color: #050700;
 			border: none;
-			color: white;
+			color: rgb(255, 255, 255);
 			padding: 20px;
 			text-align: center;
 			text-decoration: none;
@@ -2550,7 +2550,7 @@ input[type="mybutton"],
 				}
 
 					#nav a:hover {
-						background-color: transparent;
+						background-color: #ffffff;
 					}
 
 		/* Articles */
@@ -2802,7 +2802,7 @@ UIA-TIMELINE
 	  --_uia-timeline-annual-sections-safe-gap: var(--uia-timeline-annual-sections-safe-gap, 1.5rem); 
 	--_uia-timeline-point-line-position: var(--uia-timeline-point-line-position, 1rem);
 	  --_uia-timeline-year-size: var(--uia-timeline-year-size, 5rem);
-	  -webkit-text-size-adjust: 2em;
+	  -webkit-text-size-adjust: 5rem;
 
   }
   
@@ -2871,9 +2871,10 @@ UIA-TIMELINE
 	  place-items: center;
 	background-color: var(--uia-timeline-year-background-color, #f0f0f0);
 	  
-	  font-size: var(--uia-timeline-year-font-size, .75rem);
-	color: var(--uia-timeline-year-color, #222);
-  }
+	  font-size: var(--uia-timeline-year-font-size, 2rem);
+	  font-style:italic;
+	color: var(--uia-timeline-year-color, #000000);
+	}
   
   [data-uia-timeline-adapter-skin-4="uia-card-skin-#1"]{
 	--uia-card-padding: var(--uia-timeline-point-padding, 1.5rem 1.5rem 1.25rem);
@@ -2900,6 +2901,7 @@ UIA-TIMELINE
   :where(.ra-heading){
 	margin-block-start: var(--ra-heading-margin-block-start, 0);
 	margin-block-end: var(--ra-heading-margin-block-end, 0);
+	stroke stroke-width: 1rem;
   }
   
   /*
