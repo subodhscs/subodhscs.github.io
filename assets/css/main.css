@@ -1635,23 +1635,24 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		display: inline-block;
-		position: relative;
+		display:inline-flex;
+		position:relative;
 	}
 
 		.image img {
 			display: block;
-			width: 100%;
+			width: 50%;
+			align-items: center;
 		}
 
 		.image.fit {
 			display: block;
-			width: 100%;
+			width: 50%;
 		}
 
 		.image.featured {
 			display: block;
-			width: 100%;
+			width: 50%;
 			margin: 0 0 2em 0;
 		}
 
@@ -3085,4 +3086,77 @@ UIA-TIMELINE
   .linktr__goal{ 
 	box-shadow: rgb(8 49 112 / 24%) 0 2px 8px 0;  
   }
+
+/* Collapsible Menu Design */
+
+/* ul-timeline
+ **************************************************/
+ ul.timeline {
+	border-left: 8px solid #FFF;
+	list-style: none;
+	padding: 1px 0;
+	margin-left: 100px;
+}
+
+ul.timeline li .date {
+	float: left;
+	padding: 10px 15px 10px 10px;
+	margin-top: 10px;
+	margin-left: -115px;
+	font-size: 15px;
+	width: 110px;
+	text-align: center;
+	/*background: #03cc85;*/
+	color: #fff;
+}
+
+/*ul.timeline li.open .data {
+	background: #03bb7a;
+}*/
+
+ul.timeline li .circle {
+	float: left;
+	margin: 20px 0;
+	margin-left: -14px;
+	width: 20px;
+	height: 20px;
+	border: 4px solid #FFFFFF;
+	border-radius: 10px;
+	background-color: #d5d5d5;
+}
+
+ul.timeline li.open .circle {
+	/*background-color: #03bb7a;*/
+	-webkit-box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
+	box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
+}
+
+ul.timeline li .data {
+	background: #fdfdfd;
+	margin: 10px 0px 10px 20px;
+	border-left: 10px solid;
+	padding: 18px 20px;
+	font-size: 16px;
+
+	-webkit-box-shadow: 0px 3px 3px -3px #ccc;
+	box-shadow: 0px 3px 3px -3px #ccc;
+	border-radius: 3px;
+}
+
+ul.timeline li.open .data {
+	/*border-color: #03bb7a;*/
+	background: #fff;
+}
+
+ul.timeline li .data .subject {
+	cursor: pointer;
+	color: #777;
+	font-size: 18px;
+}
+
+ul.timeline li .data .text {
+	display: none;
+	margin-top: 15px;
+	font-size: 14px;
+}
 
