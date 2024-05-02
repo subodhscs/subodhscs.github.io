@@ -1647,12 +1647,12 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			width: 50%;
+			width: 100%;
 		}
 
 		.image.featured {
 			display: block;
-			width: 50%;
+			width: 100%;
 			margin: 0 0 2em 0;
 		}
 
