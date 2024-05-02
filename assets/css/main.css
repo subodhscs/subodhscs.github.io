@@ -1641,7 +1641,7 @@ input, select, textarea {
 	}
 		.myimage img {
 			display: block;
-			width: 25%;
+			width: 50%;
 			height: auto;
 			align-items: center;
 		}
