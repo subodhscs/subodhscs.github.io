@@ -1644,6 +1644,11 @@ input, select, textarea {
 			width: 100%;
 			align-items: center;
 		}
+		.image img1 {
+			display: block;
+			width: 50%;
+			align-items: center;
+		}
 
 		.image.fit {
 			display: block;
