@@ -2079,7 +2079,7 @@ input[type="mybutton"],
 
 	.wrapper {
 		background-image: url("images/bg.png");
-		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(228, 226, 226, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
 	}
@@ -2088,7 +2088,7 @@ input[type="mybutton"],
 			background-image: none;
 			background-color: #fff;
 			text-decoration-color: #000000;
-			-webkit-text-stroke-width: 0.03em;
+			-webkit-text-stroke-width: 0.025em;
 			-webkit-text-stroke-color: #000000;
 		}
 
@@ -2097,6 +2097,7 @@ input[type="mybutton"],
 			background-color: #dad4d4;
 			text-shadow: 1px 1px 0px #fff;
 			text-align: center;
+			font: 1rem Georgia, serif;
 		}
 
 		.wrapper.style3 {
@@ -2214,6 +2215,7 @@ input[type="mybutton"],
 	body > article {
 		margin-bottom: 0;
 	}
+
 
 	#top {
 		padding: 3em 0 5em 0;
@@ -3064,6 +3066,17 @@ UIA-TIMELINE
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	.quote {
+		margin: 0;
+		background: #d0d8da;
+		border-radius: 2em;
+		text-align: justify;
+	  }
+	  .quote figcaption,
+	  .quote blockquote {
+		margin: 1em;
+		font: 1rem Georgia, serif;
+	  }
   }
   
   p{
@@ -3173,17 +3186,3 @@ ul.timeline li .data .text {
 }
 
 
-body {
-	margin: 0em;
-	font: 1rem Georgia, serif;
-  }
-  .quote {
-	margin: 0;
-	background: #d0d8da;
-	border-radius: 2em;
-	text-align: justify;
-  }
-  .quote figcaption,
-  .quote blockquote {
-	margin: 1em;
-  }
