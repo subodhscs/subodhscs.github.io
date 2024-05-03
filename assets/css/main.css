@@ -1641,7 +1641,7 @@ input, select, textarea {
 	}
 		.myimage img {
 			display: block;
-			width: 50%;
+			width: 25%;
 			height: auto;
 			align-items: center;
 		}
@@ -3172,3 +3172,18 @@ ul.timeline li .data .text {
 	font-size: 14px;
 }
 
+
+body {
+	margin: 0em;
+	font: 1rem Georgia, serif;
+  }
+  .quote {
+	margin: 0;
+	background: #d0d8da;
+	border-radius: 2em;
+	text-align: justify;
+  }
+  .quote figcaption,
+  .quote blockquote {
+	margin: 1em;
+  }
